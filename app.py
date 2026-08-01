@@ -1,3 +1,8 @@
+import os
+import sys
+# Resolve sys.path for Streamlit Community Cloud deployments
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import streamlit as st
 from utils.ui_helpers import load_global_css, gradient_header
 from utils.auth import login_user, register_organization, register_employee, require_role
@@ -34,6 +39,16 @@ gradient_header("ServiceHubAI", "Enterprise AI-Powered Service Desk Platform")
 if "user" in st.session_state and st.session_state["user"]:
     user = st.session_state["user"]
     role = user["role"]
+    
+    # Active Session Sidebar Controls
+    with st.sidebar:
+        st.markdown(f"### Logged in:")
+        st.caption(f"{user['email']}")
+        st.caption(f"Role: {role.upper()}")
+        if st.button("Logout Session", use_container_width=True):
+            from utils.auth import logout_user
+            logout_user()
+            
     try:
         if role in ["superadmin", "orgadmin"]:
             st.switch_page("pages/Admin.py")
