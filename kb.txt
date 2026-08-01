@@ -1,0 +1,7 @@
+VPN issues can be fixed by reconnecting.
+
+Password reset:
+Go to Active Directory and reset password.
+
+Outlook issue:
+Clear cache and restart Outlook.

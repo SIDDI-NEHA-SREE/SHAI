@@ -1,0 +1,33 @@
+.stApp{
+    background-color:#020617;
+}
+
+.ticket-card{
+    background:#0f172a;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:12px;
+}
+
+.kpi-card{
+    background:#111827;
+    border-radius:18px;
+    padding:20px;
+    border:1px solid #1f2937;
+}
+
+.gradient-title{
+    font-size:42px;
+    font-weight:800;
+    background:linear-gradient(90deg,#ffffff,#818cf8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.big-card{
+    background:#0f172a;
+    padding:25px;
+    border-radius:20px;
+    border:1px solid #334155;
+}

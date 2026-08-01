@@ -1,0 +1,22 @@
+[
+    {
+        "email":"employee@acme.com",
+        "password":"123",
+        "role":"employee"
+    },
+    {
+        "email":"manager@acme.com",
+        "password":"123",
+        "role":"manager"
+    },
+    {
+        "email":"agent@acme.com",
+        "password":"123",
+        "role":"agent"
+    },
+    {
+        "email":"servicehubai.2026@gmail.com",
+        "password":"admin123",
+        "role":"superadmin"
+    }
+]
